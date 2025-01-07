@@ -17,13 +17,24 @@ export interface ITask {
 }
 
 export function App() {
-  // const [tasks, setTasks] = useState<ITask[]>([])
+  const [tasks, setTasks] = useState<ITask[]>([])
   const [inputValue, setInputValue] = useState('')
 
   function handleAddTask() {
-    // if (!inputValue) {
+    if (!inputValue) {
       return
     }
+
+    const newTask: ITask = {
+      id: new Date().getTime(),
+      text: inputValue,
+      isChecked: false,
+    }
+
+    setTasks((state) => [...state, newTask])
+    setInputValue('')
+  }
+
 
   return (
    <main>
