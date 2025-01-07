@@ -1,10 +1,15 @@
-import { Header } from './components/Header'
+import styles from './App.module.css'
 
-function App() {
+import { Header } from './components/Header'
+import { Empty } from './components/list/Empty'
+
+export function App() {
 
   return (
+   <main>
     <Header />
+    <Empty />
+   </main> 
+    
   )
 }
-
-export default App
