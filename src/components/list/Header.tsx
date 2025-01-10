@@ -16,7 +16,9 @@ export function Header({ tasksCounter, checkedTasksCounter }: Props) {
       <aside>
        <p>Concluídas</p> 
        <span>
-        {tasksCounter === 0 ? tasksCounter : `${checkedTasksCounter} de ${tasksCounter}`}
+        {tasksCounter === 0 
+          ? tasksCounter
+          : `${checkedTasksCounter} de ${tasksCounter}`}
        </span>
       </aside>
      </header> 
