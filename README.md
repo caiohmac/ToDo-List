@@ -1,50 +1,56 @@
-# React + TypeScript + Vite
+# 📦 ToDo - RocketSeat Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<!--![Project Logo](https://via.placeholder.com/600x200?text=Project+Logo)-->
+📋 Your ultimate, clutter-free To-Do List to conquer tasks effortlessly! 
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- 🔥 **Customizable** - Write your tasks your own way, just like you want them.
+- ⚡ **Responsive** - Intuitive and quick to use.
+- 🌟 **Nice Design** - Beautiful interface to make it your own.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 📖 Table of Contents
+- [Features](#-features)
+- [Getting Started](#-getting-started)
+- [Installation](#-installation)
+- [Usage](#-usage)
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🛠️ Getting Started
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Prerequisites
+Make sure you have the following installed:
+- [Node.js](https://nodejs.org/)
+- [Vite](https://vite.dev/)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Installation
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/caiohmac/ToDo-List
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd ToDo-List
+    ```
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+---
+
+## 💡 Usage
+1. Start the development server:
+    ```bash
+    npm run dev
+    ```
+2. Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+(note that Vite automatically chooses port 5173 if no other port is specified. However, if port 5173 is already in use, Vite will attempt to find the next available port.)
+
+For a production build:
+```bash
+npm run build
