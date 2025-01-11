@@ -6,9 +6,9 @@
     justify-content: space-between;
 }
 
-container aside {
+.container aside {
     display: flex;
-    align-items: centero;
+    align-items: center;
     gap: 0.5rem;
 
     font-weight: bold;

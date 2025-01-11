@@ -19,14 +19,14 @@
     margin-bottom: 2.3125rem;
 }
 
-.taskList {
+.tasksList {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-.taskList > div {
+.tasksList > div {
     display: flex;
-    justify-content: column;
+    flex-direction: column;
     gap: 0.75rem;
 }

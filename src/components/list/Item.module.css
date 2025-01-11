@@ -24,7 +24,7 @@
     gap: 0.75rem;
 }
 
-.container .label input[type="checkbox"] {
+.container label input[type='checkbox'] {
     display: none;
 }
 

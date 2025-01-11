@@ -1,4 +1,4 @@
-import { List, PlusCircle } from '@phosphor-icons/react'
+import { PlusCircle } from '@phosphor-icons/react'
 import { useState } from 'react'
 
 import styles from './App.module.css'
@@ -49,7 +49,7 @@ export function App() {
       return
     }
 
-    return(filteredTasks)
+    setTasks(filteredTasks)
   }
 
   function handleToggleTask({ id, value }: { id: number; value: boolean }) {
